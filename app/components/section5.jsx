@@ -32,8 +32,10 @@ const Section5 = () => {
                 </h5>
               </a>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
+                Our event management services elevate your brand into the
+                spotlight, creating shareworthy and immersive moments. From
+                corporate conferences to grand galas, we ensure every detail is
+                meticulously planned and executed to perfection.
               </p>
               <a
                 href="#"
@@ -77,8 +79,10 @@ const Section5 = () => {
                 </h5>
               </a>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
+                Transform your spaces with our hospitality design services. We
+                bring a boutique approach to creating luxurious, functional, and
+                memorable environments. Whether it’s a hotel, restaurant, or
+                event venue, we blend innovation with elegance.
               </p>
               <a
                 href="#"
@@ -122,8 +126,10 @@ const Section5 = () => {
                 </h5>
               </a>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
+                Experience the art of mixology with our professional bartenders.
+                From crafting unique cocktails to delivering top-notch service,
+                we elevate your event with a blend of creativity and expertise.
+                Perfect for corporate events, weddings, and private parties.
               </p>
               <a
                 href="#"
