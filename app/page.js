@@ -4,6 +4,7 @@ import HeroPage from "./components/heroPage";
 import Section2 from "./components/section2";
 import Section3 from "./components/section3";
 import Section4 from "./components/section4";
+import Section5 from "./components/section5";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Section2 />
       <Section3 />
       <Section4 />
+      <Section5 />
     </main>
   );
 }

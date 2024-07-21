@@ -1,12 +1,21 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import video from "../../public/vidmix.mp4";
 
 import { gsap } from "gsap";
 
 import bar from "../../public/bar.jpg"; // Ensure the correct path to your image
 
 const HeroPage = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.78; // Set the playback rate to 0.5 for slower playback
+    }
+  }, []);
+
   useEffect(() => {
     // Animate elements with the class 'hero-text' to slide in from the left
     gsap.set(".hero-text", { x: -500, opacity: 0 });
@@ -48,13 +57,21 @@ const HeroPage = () => {
         </div>
       </div>
       <div className="relative overflow-hidden">
-        <Image
+        <video
+          className="hero-image z-0  rounded-t-lg object-cover object-bottom w-full h-full"
+          ref={videoRef}
+          src={video}
+          autoPlay
+          loop
+          muted
+        />
+        {/* <Image
           className="hero-image z-0 bg-black object-cover"
           src={bar}
           fill
           alt="Background Image"
           priority
-        />
+        /> */}
       </div>
     </div>
   );
