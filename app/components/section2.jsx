@@ -40,14 +40,14 @@ const Section2 = () => {
   }, []);
 
   return (
-    <section className="relative h-[100vh] flex flex-col items-center justify-center text-center overflow-hidden">
+    <section className="relative h-[50vh] flex flex-col mt-20 items-center justify-center text-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         {/* <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: "url('/passion.jpg')" }}
         ></div> */}
       </div>
-      <div className="relative z-10 mt-32 font-poppins-400">
+      <div className="relative z-10 font-poppins-400">
         <p className="we-are text-gray-800 text-3xl">
           <span className="text-red-500 font-bold">We are</span> creatives,
           vision builders, planners, entertainers. <br />

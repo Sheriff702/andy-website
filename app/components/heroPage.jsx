@@ -1,20 +1,12 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
+import React, { useEffect, useRef } from "react";
 import video from "../../public/vidmix.mp4";
-
 import { gsap } from "gsap";
-
-import bar from "../../public/bar.jpg"; // Ensure the correct path to your image
 
 const HeroPage = () => {
   const videoRef = useRef(null);
-  const [showVideo, setShowVideo] = useState(true);
 
   useEffect(() => {
-    // Randomly decide whether to show video or image
-    setShowVideo(Math.random() > 0.5);
-
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.78; // Set the playback rate for slower playback
       videoRef.current.muted = true; // Ensure the video is muted for autoplay
@@ -28,12 +20,11 @@ const HeroPage = () => {
     // Animate elements with the class 'hero-text' to slide in from the left
     gsap.set(".hero-text", { x: -500, opacity: 0 });
     gsap.to(".hero-text", {
-      duration: 1.5,
+      duration: 1,
       opacity: 1,
-
       ease: "power2.out",
       x: 0,
-      stagger: 1,
+      stagger: 0.2,
     });
 
     // Animate elements with the class 'hero-image' to slide in from the right
@@ -41,7 +32,6 @@ const HeroPage = () => {
     gsap.to(".hero-image", {
       duration: 2.5,
       opacity: 1,
-
       ease: "power4.out",
       x: 0,
       stagger: 0.2,
@@ -49,9 +39,41 @@ const HeroPage = () => {
   }, []);
 
   return (
-    <div className=" h-[90vh] grid grid-cols-1 md:grid-cols-2 ">
-      <div className="hero-text-container flex items-center justify-center bg-white bg-opacity-70 rounded-sm ">
-        <div className="space-y-10 text-center md:text-left">
+    <div className="relative h-[90vh] grid grid-cols-1 md:grid-cols-2 overflow-hidden">
+      <div className="relative w-full h-full order-first md:order-last">
+        <video
+          className="hero-image absolute inset-0 w-full h-full object-cover z-0"
+          ref={videoRef}
+          src={video}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        {/* <Image
+          className="hero-image absolute inset-0 w-full h-full object-cover z-0"
+          src={bar}
+          fill
+          alt="Background Image"
+          priority
+        /> */}
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center md:hidden">
+          <div className="hero-text-container text-center text-white p-4">
+            <h1 className="hero-text text-2xl md:text-5xl font-bold">
+              EVENT MANAGEMENT,
+            </h1>
+            <h1 className="hero-text text-2xl md:text-5xl font-bold">
+              HOSPITALITY DESIGN
+            </h1>
+            <h1 className="hero-text text-2xl md:text-5xl font-bold">
+              <span className="text-green-400"> & </span> <br /> <br />
+              {""} WORLDCLASS MIXOLOGY
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div className="hero-text-container hidden md:flex items-center justify-center bg-white bg-opacity-70 rounded-sm">
+        <div className="space-y-10 text-center md:text-left p-4">
           <h1 className="hero-text text-2xl md:text-5xl font-bold text-gray-800">
             EVENT MANAGEMENT,
           </h1>
@@ -63,23 +85,6 @@ const HeroPage = () => {
             {""} WORLDCLASS MIXOLOGY
           </h1>
         </div>
-      </div>
-      <div className="relative overflow-hidden">
-        <video
-          className="hero-image z-0  rounded-t-lg object-cover object-bottom w-full h-full"
-          ref={videoRef}
-          src={video}
-          autoPlay
-          loop
-          muted
-        />
-        {/* <Image
-          className="hero-image z-0 bg-black object-cover"
-          src={bar}
-          fill
-          alt="Background Image"
-          priority
-        /> */}
       </div>
     </div>
   );

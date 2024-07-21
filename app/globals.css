@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.split-section {
+  overflow-x: hidden;
+}
+
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;

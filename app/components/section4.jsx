@@ -5,9 +5,9 @@ import passion from "../../public/sec4.jpg";
 const Section4 = () => {
   return (
     <section>
-      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-          <div className="relative h-64  overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+      <div className="mx-auto  max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 text-center">
+          <div className="relative h-64   overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
             <Image
               alt=""
               src={passion}
@@ -31,7 +31,7 @@ const Section4 = () => {
             </p>
 
             <button className="btn-hover-effect mt-10 bg-black text-white px-12 py-4 rounded-full font-semibold relative overflow-hidden">
-              <span className="relative z-10"> Contact us Today</span>
+              <span className="relative z-10 "> Contact us Today</span>
             </button>
           </div>
         </div>
