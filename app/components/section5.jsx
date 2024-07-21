@@ -19,6 +19,7 @@ const Section5 = () => {
                   src={event}
                   alt="Service Image"
                   layout="fill"
+                  priority
                 />
               </div>
             </a>
@@ -63,6 +64,7 @@ const Section5 = () => {
                   src={design}
                   alt="Service Image"
                   layout="fill"
+                  priority
                 />
               </div>
             </a>
@@ -107,6 +109,7 @@ const Section5 = () => {
                   src={bartender}
                   alt="Service Image"
                   fill
+                  priority
                 />
               </div>
             </a>
