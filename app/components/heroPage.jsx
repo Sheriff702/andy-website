@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import video from "../../public/vidmix.mp4";
 
@@ -9,10 +9,18 @@ import bar from "../../public/bar.jpg"; // Ensure the correct path to your image
 
 const HeroPage = () => {
   const videoRef = useRef(null);
+  const [showVideo, setShowVideo] = useState(true);
 
   useEffect(() => {
+    // Randomly decide whether to show video or image
+    setShowVideo(Math.random() > 0.5);
+
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.78; // Set the playback rate to 0.5 for slower playback
+      videoRef.current.playbackRate = 0.78; // Set the playback rate for slower playback
+      videoRef.current.muted = true; // Ensure the video is muted for autoplay
+      videoRef.current.play().catch((error) => {
+        console.error("Error attempting to play", error);
+      });
     }
   }, []);
 
@@ -22,7 +30,7 @@ const HeroPage = () => {
     gsap.to(".hero-text", {
       duration: 1.5,
       opacity: 1,
-      toggleActions: "restart pause reverse restart",
+
       ease: "power2.out",
       x: 0,
       stagger: 1,
@@ -33,7 +41,7 @@ const HeroPage = () => {
     gsap.to(".hero-image", {
       duration: 2.5,
       opacity: 1,
-      toggleActions: "restart pause reverse pause",
+
       ease: "power4.out",
       x: 0,
       stagger: 0.2,

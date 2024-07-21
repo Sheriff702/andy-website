@@ -8,7 +8,9 @@ import event from "../../public/event.jpg";
 const Section5 = () => {
   return (
     <section className="min-h-screen items-center justify-center bg-gray-100 p-10">
-      <h1 className="text-6xl text-center uppercase p-20">Our Services</h1>
+      <h1 className="text-xl md:text-6xl  text-center uppercase p-20">
+        Our Services
+      </h1>
       <div className=" flex items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
