@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.split-section {
+  background: #f7f7f7; /* Adjust background color as needed */
+}
+
+.btn-hover-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 255, 26);
+  z-index: 0;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.btn-hover-effect:hover::before {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.btn-hover-effect span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.3s ease;
+}
+
+.btn-hover-effect:hover span {
+  color: black;
+}
