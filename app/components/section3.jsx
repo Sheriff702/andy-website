@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const SplitSection = () => {
   useEffect(() => {
-    gsap.set(".corporate-grid", { x: -900, opacity: 0 });
+    gsap.set(".corporate-grid", { x: "100%", opacity: 0 });
     gsap.to(".corporate-grid", {
       scrollTrigger: {
         trigger: ".corporate-grid",
@@ -18,11 +18,11 @@ const SplitSection = () => {
       },
       opacity: 1,
       ease: "power4.out",
-      x: 190,
+      x: 0,
       duration: 1,
     });
 
-    gsap.set(".social-grid", { x: 900, opacity: 0 });
+    gsap.set(".social-grid", { x: "-100%", opacity: 0 });
     gsap.to(".social-grid", {
       scrollTrigger: {
         trigger: ".social-grid",
@@ -33,7 +33,7 @@ const SplitSection = () => {
       },
       opacity: 1,
       ease: "power4.out",
-      x: -190,
+      x: 0,
       duration: 1,
     });
 
