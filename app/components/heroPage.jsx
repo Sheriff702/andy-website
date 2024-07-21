@@ -13,6 +13,7 @@ const HeroPage = () => {
     gsap.to(".hero-text", {
       duration: 1.5,
       opacity: 1,
+      toggleActions: "restart pause reverse restart",
       ease: "power2.out",
       x: 0,
       stagger: 1,
@@ -23,6 +24,7 @@ const HeroPage = () => {
     gsap.to(".hero-image", {
       duration: 2.5,
       opacity: 1,
+      toggleActions: "restart pause reverse pause",
       ease: "power4.out",
       x: 0,
       stagger: 0.2,
@@ -30,7 +32,7 @@ const HeroPage = () => {
   }, []);
 
   return (
-    <div className=" h-[90vh] grid grid-cols-1 md:grid-cols-2">
+    <div className=" h-[90vh] grid grid-cols-1 md:grid-cols-2 ">
       <div className="hero-text-container flex items-center justify-center bg-white bg-opacity-70 rounded-sm ">
         <div className="space-y-10 text-center md:text-left">
           <h1 className="hero-text text-2xl md:text-5xl font-bold text-gray-800">

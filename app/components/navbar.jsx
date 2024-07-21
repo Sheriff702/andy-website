@@ -1,13 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import logo from "../../public/12.png";
+import logo from "../../public/logo/12.png";
 
 const Navbar = () => {
   return (
     <nav className="  bg-white    ">
       <div className=" mr-20 flex flex-wrap items-center justify-between mx-auto ">
         <a
-          href="https://flowbite.com/"
+          href="https://sheriff702.me/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <Image src={logo} className=" " alt="Logo" width={250} height={250} />
