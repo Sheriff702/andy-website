@@ -58,7 +58,7 @@ const SplitSection = () => {
       className="split-section h-[100vh] flex items-center justify-center bg-cover bg-center p-4"
       style={{ backgroundImage: "url('/section3.webp')" }} // Updated this path to the correct path of your image
     >
-      <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 px-4 bg-white bg-opacity-75 rounded-lg">
+      <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 px-4 bg-white bg-opacity-60 md:m-20 md:p-20 rounded-lg">
         <div className="corporate-grid flex flex-col justify-center items-center md:items-end text-center md:text-right">
           <div className="text-center max-w-xs md:max-w-md">
             <h2 className="text-4xl font-poppins-700 mb-4">
@@ -75,13 +75,13 @@ const SplitSection = () => {
             </button>
           </div>
         </div>
-        <div className="line flex justify-center items-center">
-          <svg height="300" width="3" className="hidden md:block">
+        <div className="line flex justify-center items-center ">
+          <svg height="300" width="300" className="hidden md:block">
             <line
-              x1="1.5"
-              y1="0"
-              x2="1.5"
-              y2="400"
+              x1="0"
+              y1="500"
+              x2="200"
+              y2="0"
               style={{ stroke: "black", strokeWidth: 2 }}
             />
           </svg>

@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import video from "../../public/vidmix.mp4";
+import video from "../../../public/vidmix.mp4";
 import { gsap } from "gsap";
 
 const HeroPage = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import passion from "../../public/sec4.jpg";
+import passion from "../../../public/sec4.jpg";
 
 const Section4 = () => {
   return (

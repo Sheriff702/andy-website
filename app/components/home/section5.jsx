@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import pic from "../../public/sec4.jpg";
-import design from "../../public/design.jpg";
-import bartender from "../../public/bartender.jpg";
-import event from "../../public/event.jpg";
+
+import design from "../../../public/design.jpg";
+import bartender from "../../../public/bartender.jpg";
+import event from "../../../public/event.jpg";
 
 const Section5 = () => {
   return (
