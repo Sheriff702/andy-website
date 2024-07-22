@@ -67,7 +67,7 @@ const Section5 = () => {
                   className="rounded-t-lg object-cover object-bottom"
                   src={design}
                   alt="Service Image"
-                  layout="fill"
+                  fill
                   priority
                 />
               </div>
