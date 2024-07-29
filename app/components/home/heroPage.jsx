@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import video from "../../../public/vidmix.mp4";
+import video from "../../../public/videos/vidmix.mp4";
 import { gsap } from "gsap";
 
 const HeroPage = () => {
@@ -58,31 +58,29 @@ const HeroPage = () => {
           priority
         /> */}
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center md:hidden">
-          <div className="hero-text-container text-center text-white p-4">
-            <h1 className="hero-text text-2xl md:text-5xl font-bold">
+          <div className="hero-text-container font-domine text-center text-white p-4">
+            <h1 className=" hero-text text-2xl md:text-5xl font-bold">
               EVENT MANAGEMENT,
             </h1>
             <h1 className="hero-text text-2xl md:text-5xl font-bold">
-              HOSPITALITY DESIGN
+              HOSPITALITY DESIGN <span className="text-green-400"> + </span>
             </h1>
             <h1 className="hero-text text-2xl md:text-5xl font-bold">
-              <span className="text-green-400"> & </span> <br /> <br />
-              {""} WORLDCLASS MIXOLOGY
+              BARTENDER SERVICES
             </h1>
           </div>
         </div>
       </div>
       <div className="hero-text-container hidden md:flex items-center justify-center bg-white bg-opacity-70 rounded-sm">
-        <div className="space-y-10 text-center md:text-left p-4">
+        <div className="space-y-10 text-center font-domine md:text-left p-4">
           <h1 className="hero-text text-2xl md:text-5xl font-bold text-gray-800">
             EVENT MANAGEMENT,
           </h1>
-          <h1 className="hero-text text-2xl md:text-5xl font-bold text-gray-800">
-            HOSPITALITY DESIGN
+          <h1 className="hero-text text-2xl md:text-5xl font-bold">
+            HOSPITALITY DESIGN <span className="text-green-400"> + </span>
           </h1>
-          <h1 className="hero-text text-2xl md:text-5xl font-bold text-gray-800">
-            <span className="text-green-400"> & </span> <br /> <br />
-            {""} WORLDCLASS MIXOLOGY
+          <h1 className="hero-text text-2xl md:text-5xl font-bold">
+            BARTENDER SERVICES
           </h1>
         </div>
       </div>

@@ -15,12 +15,12 @@ const Section2 = () => {
         start: "top 80%",
         end: "bottom center",
         toggleActions: "restart pause reverse pause",
-        scrub: 1,
+        scrub: 1.5,
       },
       opacity: 1,
       ease: "power4.out",
       x: 0,
-      stagger: 0.4,
+      stagger: 0.2,
     });
 
     gsap.set(".we", { x: 900, opacity: 0 });
@@ -30,24 +30,19 @@ const Section2 = () => {
         start: "top 80%",
         end: "bottom center",
         toggleActions: "restart pause reverse pause",
-        scrub: 0.2,
+        scrub: 1.5,
       },
       opacity: 1,
       ease: "power4.out",
       x: 0,
-      stagger: 0.4,
+      stagger: 0.2,
     });
   }, []);
 
   return (
-    <section className="relative h-[50vh] flex flex-col mt-20 items-center justify-center text-center overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        {/* <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: "url('/passion.jpg')" }}
-        ></div> */}
-      </div>
-      <div className="relative z-10 font-poppins-400">
+    <section className="relative h-[65vh] flex flex-col items-center justify-center text-center overflow-hidden bg-peachy lg:bg-[url('/images/pro.png')] bg-cover bg-top">
+      <div className="absolute inset-0 z-0"></div>
+      <div className="relative z-10 font-poppins">
         <p className="we-are text-gray-800 text-3xl">
           <span className="text-red-500 font-bold">We are</span> creatives,
           vision builders, planners, entertainers. <br />
@@ -59,11 +54,8 @@ const Section2 = () => {
         <p className="we-are text-gray-800 text-3xl leading-relaxed">
           All things are possible. <br />
         </p>
-        <p className="we text-gray-800 text-3xl leading-relaxed">
-          Because <br />
-          {""}
-        </p>
-        <p className="we-are text-gray-800 text-3xl">
+
+        <p className="we text-gray-800 text-3xl">
           <span className=" text-red-500 font-bold">We are Carousel.</span>
         </p>
       </div>

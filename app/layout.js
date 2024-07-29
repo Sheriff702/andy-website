@@ -1,5 +1,5 @@
-import { Inter } from "next/font/google";
-import { Poppins } from "next/font/google";
+import { Inter, Poppins, Domine } from "next/font/google";
+
 import "./globals.css";
 import Navbar from "./components/navbar";
 

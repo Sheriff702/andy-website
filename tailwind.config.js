@@ -8,8 +8,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        peachy: "#FDD6C9",
+      },
+      backgroundImage: {
+        "gradient-peachy-to-white":
+          "linear-gradient(to bottom, #FDD6C9, #ffffff)",
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        domine: ["Domine", "serif"],
+        libre: ["Libre Baskerville", "serif"],
+        cabin: ["Cabin", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

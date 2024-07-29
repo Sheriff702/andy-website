@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../../public/logo/12.png";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,22 +13,23 @@ const Navbar = () => {
 
   return (
     <body>
-      <nav className="bg-white shadow-md z-50">
+      <nav className="bg-white shadow-md ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
+            <div className="flex items-center w-[190px] lg:w-[300px]">
               <a
-                href="https://sheriff702.me/"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3"
               >
                 <Image
                   src={logo}
-                  className=" "
+                  className="overflow-hidden z-0"
                   alt="Logo"
                   width={300}
                   height={100}
+                  style={{ width: "100%", height: "auto" }}
                 />
               </a>
             </div>
@@ -80,39 +82,33 @@ const Navbar = () => {
                 <li>
                   <a
                     href="/"
-                    className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
                   >
                     Home
                   </a>
                 </li>
+
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium"
+                  <Link
+                    href="/pages/services"
+                    className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
                   >
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium"
+                  <Link
+                    href="/pages/aboutus"
+                    className="block text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Pricing
-                  </a>
+                    About Us
+                  </Link>
                 </li>
+
                 <li>
                   <a
                     href="/pages/contact"
-                    className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
                   >
                     Contact
                   </a>
@@ -133,29 +129,22 @@ const Navbar = () => {
                   Home
                 </a>
               </li>
+
               <li>
-                <a
-                  href="#"
-                  className="block text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
+                <Link
+                  href="/pages/services"
+                  className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/pages/aboutus"
                   className="block text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Pricing
-                </a>
+                  About Us
+                </Link>
               </li>
               <li>
                 <a

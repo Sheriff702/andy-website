@@ -54,17 +54,12 @@ const SplitSection = () => {
   }, []);
 
   return (
-    <section
-      className="split-section h-[100vh] flex items-center justify-center bg-cover bg-center p-4"
-      style={{ backgroundImage: "url('/section3.webp')" }} // Updated this path to the correct path of your image
-    >
-      <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 px-4 bg-white bg-opacity-60 md:m-20 md:p-20 rounded-lg">
+    <section className="split-section h-[100dvh ] flex items-center justify-center bg-cover bg-center p-4 bg-gradient-peachy-to-white lg:bg-[url('/images/ssec33.png')]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 md:m-20 md:p-20 rounded-lg">
         <div className="corporate-grid flex flex-col justify-center items-center md:items-end text-center md:text-right">
           <div className="text-center max-w-xs md:max-w-md">
-            <h2 className="text-4xl font-poppins-700 mb-4">
-              C O R P O R A T E
-            </h2>
-            <p className="mb-8 text-lg font-poppins">
+            <h2 className="text-4xl font-domine mb-4">C O R P O R A T E</h2>
+            <p className="mb-8 text-lg px-6 text-gray-600 ">
               We specialize in experiential events that elevate brands into
               popular culture, creating shareworthy and immersive moments.
               Bringing a boutique approach to innovative global brands and
@@ -75,7 +70,7 @@ const SplitSection = () => {
             </button>
           </div>
         </div>
-        <div className="line flex justify-center items-center ">
+        <div className="line flex justify-center items-center">
           <svg height="300" width="300" className="hidden md:block">
             <line
               x1="0"
@@ -88,8 +83,8 @@ const SplitSection = () => {
         </div>
         <div className="social-grid flex flex-col justify-center items-center md:items-start text-center md:text-left">
           <div className="text-center max-w-xs md:max-w-md">
-            <h2 className="text-4xl font-poppins-700 mb-4">S O C I A L</h2>
-            <p className="mb-8 text-lg font-poppins">
+            <h2 className="text-4xl font-domine mb-4">S O C I A L</h2>
+            <p className="mb-8 text-lg text-gray-600 ">
               We work with some of the best bartenders and creatives in the
               nation, when you need a bartender for your event or company kick
               off, Carousel is your answer. From unique creations to execution,
