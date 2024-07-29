@@ -1,4 +1,4 @@
-import React from "react";
+import Bartender from "../../../public/videos/bartender.mp4";
 import Image from "next/image";
 import Design from "../../../public/images/design.jpg";
 
@@ -8,7 +8,14 @@ const BartenderServices = () => {
       <div className="">
         <section className="grid grid-cols-2 h-[400px] lg:h-[750px] bg-white">
           <div className="relative h-full w-full">
-            <Image src={Design} alt="design" layout="fill" objectFit="cover" />
+            <video
+              className="absolute  inset-0 w-full h-full object-fit z-0"
+              src={Bartender}
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
           </div>
           <div className="flex items-center justify-center text-center p-4">
             <div>
@@ -46,13 +53,25 @@ const BartenderServices = () => {
             </div>
           </div>
           <div className="relative h-full w-full">
-            <Image src={Design} alt="design" layout="fill" objectFit="cover" />
+            <Image
+              src={Design}
+              alt="design"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
           </div>
         </section>
 
         <section className="grid grid-cols-2 h-[400px] lg:h-[750px] bg-white     ">
           <div className="relative h-full w-full">
-            <Image src={Design} alt="design" layout="fill" objectFit="cover" />
+            <Image
+              src={Design}
+              alt="design"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
           </div>
           <div className="flex items-center justify-center text-center p-4">
             <div className="">

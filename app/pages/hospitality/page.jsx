@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Design from "../../../public/images/design.jpg";
+import DesignVideo from "../../../public/videos/design.mp4";
 
 const Hospitality = () => {
   return (
@@ -7,7 +8,14 @@ const Hospitality = () => {
       <div className="">
         <section className="grid grid-cols-2 h-[400px] lg:h-[750px] bg-red-200 ">
           <div className="relative h-full w-full">
-            <Image src={Design} alt="design" layout="fill" objectFit="cover" />
+            <video
+              className="absolute  inset-0 w-full h-full object-fit z-0"
+              src={DesignVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
           </div>
           <div className="flex items-center justify-center text-center p-4">
             <div>
