@@ -1,15 +1,30 @@
+"use client";
+import { useEffect, useRef } from "react";
 import Bartender from "../../../public/videos/bartender.mp4";
 import Image from "next/image";
 import Design from "../../../public/images/design.jpg";
 
 const BartenderServices = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.78;
+      videoRef.current.muted = true; // Ensure the video is muted for autoplay
+      videoRef.current.play().catch((error) => {
+        console.error("Error attempting to play", error);
+      });
+    }
+  }, []);
+
   return (
     <section className="">
       <div className="">
         <section className="grid grid-cols-2 h-[400px] lg:h-[750px] bg-white">
           <div className="relative h-full w-full">
             <video
-              className="absolute  inset-0 w-full h-full object-fit z-0"
+              ref={videoRef}
+              className="absolute  inset-0 w-full h-full object-cover z-0"
               src={Bartender}
               autoPlay
               loop

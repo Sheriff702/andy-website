@@ -1,21 +1,10 @@
 "use client";
-import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Event from "../../../public/images/event.jpg";
 import EventVideo from "../../../public/videos/event.mp4";
+import EventVideo2 from "../../../public/videos/eventvideo2.mp4";
 
 const EventManagement = () => {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.muted = true; // Ensure the video is muted for autoplay
-      videoRef.current.play().catch((error) => {
-        console.error("Error attempting to play", error);
-      });
-    }
-  }, []);
-
   return (
     <section className="z-100">
       <div className="">
@@ -23,7 +12,6 @@ const EventManagement = () => {
           <div className="relative h-full w-full">
             <video
               className="absolute inset-0 w-full h-full object-cover z-0"
-              ref={videoRef}
               src={EventVideo}
               autoPlay
               loop
@@ -73,7 +61,14 @@ const EventManagement = () => {
 
         <section className="grid grid-cols-2 h-[400px] lg:h-[750px] bg-white ">
           <div className="relative h-full w-full">
-            <Image src={Event} alt="design" layout="fill" objectFit="cover" />
+            <video
+              className="absolute inset-0 w-full h-full object-cover z-0"
+              src={EventVideo2}
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
           </div>
           <div className="flex items-center justify-center ml-4  text-left ">
             <div className="">

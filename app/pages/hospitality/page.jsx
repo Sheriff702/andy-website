@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
+
 import Design from "../../../public/images/design.jpg";
-import DesignVideo from "../../../public/videos/design.mp4";
+import EventVideo from "../../../public/videos/designvideo2.mp4";
 
 const Hospitality = () => {
   return (
@@ -9,8 +11,8 @@ const Hospitality = () => {
         <section className="grid grid-cols-2 h-[400px] lg:h-[750px] bg-red-200 ">
           <div className="relative h-full w-full">
             <video
-              className="absolute  inset-0 w-full h-full object-fit z-0"
-              src={DesignVideo}
+              className="absolute  inset-0 w-full h-full object-cover z-102"
+              src={EventVideo}
               autoPlay
               loop
               muted
