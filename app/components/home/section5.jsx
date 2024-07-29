@@ -22,6 +22,7 @@ const Section5 = () => {
                   src={event}
                   alt="Service Image"
                   layout="fill"
+                  obejctFit="cover"
                   priority
                 />
               </div>

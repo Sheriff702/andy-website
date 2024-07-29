@@ -9,7 +9,6 @@ const EventManagement = () => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.78; // Set the playback rate for slower playback
       videoRef.current.muted = true; // Ensure the video is muted for autoplay
       videoRef.current.play().catch((error) => {
         console.error("Error attempting to play", error);
@@ -23,7 +22,7 @@ const EventManagement = () => {
         <section className="grid grid-cols-2 h-[400px] lg:h-[750px] bg-red-700 text-white z-100  ">
           <div className="relative h-full w-full">
             <video
-              className=" absolute inset-0 w-full h-full object-cover z-0"
+              className="absolute inset-0 w-full h-full object-cover z-0"
               ref={videoRef}
               src={EventVideo}
               autoPlay

@@ -36,6 +36,7 @@ const Section4 = () => {
             <div className="col-span-1 ">
               <div className="mb-4 hidden lg:block">
                 <Image
+                priority
                   src={Design}
                   alt="Image 1"
                   className="w-full h-[200px] md:h-[300px] lg:h-[370px] object-cover rounded-2xl"
@@ -43,6 +44,7 @@ const Section4 = () => {
               </div>
               <div className="hidden lg:block">
                 <Image
+                priority
                   src={Design}
                   alt="Image 2"
                   className="w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover rounded-2xl"
@@ -51,6 +53,7 @@ const Section4 = () => {
             </div>
             <div className="col-span-1 flex  justify-center lg:grid items-center">
               <Image
+              priority
                 src={Design}
                 alt="Image 3"
                 className=" lg:w-full h-[250px] mr-40  md:h-[300px] lg:h-[370px] object-cover  rounded-2xl"
