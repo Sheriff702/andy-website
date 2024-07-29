@@ -4,7 +4,7 @@ import { getQliroLogoUrl } from "../../utils/qlirologo";
 import AWT from "../../../public/images/awt.jpeg";
 import Iba from "../../../public/images/iba.png";
 import TikTok from "../../../public/images/tiktok.svg";
-import Campari from "../../../public/images/campari.svg";
+
 import FM from "../../../public/images/fm.svg";
 import London from "../../../public/images/london.jpg";
 import SBG from "../../../public/images/sbg.png";
@@ -56,13 +56,7 @@ const Section52 = () => {
             height={48}
             className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
           />
-          <Image
-            alt="Campari"
-            src={Campari}
-            width={158}
-            height={48}
-            className="col-span-2  w-full object-contain sm:col-start-2 lg:col-span-1"
-          />
+
           <Image
             alt="fornudden mansion"
             src={FM}
