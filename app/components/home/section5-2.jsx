@@ -4,7 +4,7 @@ import { getQliroLogoUrl } from "../../utils/qlirologo";
 import AWT from "../../../public/images/awt.jpeg";
 import Iba from "../../../public/images/iba.png";
 import TikTok from "../../../public/images/tiktok.svg";
-import Campari from "../../../public/images/campari.svg";
+import Campari from "../../../public/images/cam.svg";
 import FM from "../../../public/images/fm.svg";
 import London from "../../../public/images/london.jpg";
 import SBG from "../../../public/images/sbg.png";
@@ -27,6 +27,7 @@ const Section52 = () => {
             width={200}
             height={200}
             className="col-span-2 max-h-22 w-full object-contain lg:col-span-1"
+            priority
           />
           <Image
             alt="London Essence"
@@ -34,6 +35,7 @@ const Section52 = () => {
             width={200}
             height={200}
             className="col-span-2 max-h-22 w-full object-contain lg:col-span-1"
+            priority
           />
           <Image
             alt="AWT"
@@ -41,6 +43,7 @@ const Section52 = () => {
             width={158}
             height={48}
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            priority
           />
           <Image
             alt="IBA"
@@ -48,6 +51,7 @@ const Section52 = () => {
             width={158}
             height={158}
             className="col-span-2 max-h-24 w-full object-contain lg:col-span-1"
+            priority
           />
           <Image
             alt="TikTok"
@@ -55,6 +59,7 @@ const Section52 = () => {
             width={158}
             height={48}
             className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+            priority
           />
           <Image
             alt="Campari"
@@ -62,6 +67,7 @@ const Section52 = () => {
             width={158}
             height={48}
             className="col-span-2  w-full object-contain sm:col-start-2 lg:col-span-1"
+            priority
           />
           <Image
             alt="fornudden mansion"
@@ -69,6 +75,7 @@ const Section52 = () => {
             width={158}
             height={48}
             className="col-span-2 max-h-24 w-full object-contain sm:col-start-2 lg:col-span-1"
+            priority
           />
           <Image
             alt="SBR"
@@ -76,6 +83,7 @@ const Section52 = () => {
             width={158}
             height={48}
             className="col-span-2 max-h-32 w-full object-contain sm:col-start-2 lg:col-span-1"
+            priority
           />
 
           <Image
@@ -84,6 +92,7 @@ const Section52 = () => {
             width={158}
             height={48}
             className="col-span-2 max-h-24 w-full object-contain sm:col-start-2 lg:col-span-1"
+            priority
           />
 
           <Image
@@ -92,6 +101,7 @@ const Section52 = () => {
             width={158}
             height={48}
             className="col-span-2 max-h-24 w-full object-contain sm:col-start-2 lg:col-span-1"
+            priority
           />
         </div>
       </div>
