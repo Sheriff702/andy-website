@@ -13,8 +13,9 @@ const Hero = () => {
       <Section2 />
       <Section3 />
       <Section4 />
-      <Section5 />
       <Section52 />
+      <Section5 />
+
       <Section6 />
     </main>
   );

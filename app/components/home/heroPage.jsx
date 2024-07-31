@@ -50,13 +50,7 @@ const HeroPage = () => {
           muted
           playsInline
         />
-        {/* <Image
-          className="hero-image absolute inset-0 w-full h-full object-cover z-0"
-          src={bar}
-          fill
-          alt="Background Image"
-          priority
-        /> */}
+
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center md:hidden">
           <div className="hero-text-container font-domine text-center text-white p-4">
             <h1 className=" hero-text text-2xl md:text-5xl font-bold">

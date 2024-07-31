@@ -16,7 +16,7 @@ const Navbar = () => {
       <nav className="bg-white shadow-md ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center w-[190px] lg:w-[300px]">
+            <div className="flex overflow-hidden items-center w-[190px] lg:w-[300px]">
               <a
                 href="/"
                 target="_blank"
@@ -27,7 +27,7 @@ const Navbar = () => {
                   src={logo}
                   className="overflow-hidden z-0"
                   alt="Logo"
-                  width={300}
+                  width={250}
                   height={100}
                   style={{ width: "100%", height: "auto" }}
                 />

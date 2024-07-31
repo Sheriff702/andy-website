@@ -54,10 +54,10 @@ const SplitSection = () => {
   }, []);
 
   return (
-    <section className="split-section h-[100dvh ] flex items-center justify-center bg-cover bg-center p-4 bg-gradient-peachy-to-white lg:bg-[url('/images/ssec33.png')]">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 md:m-20 md:p-20 rounded-lg">
-        <div className="corporate-grid flex flex-col justify-center items-center md:items-end text-center md:text-right">
-          <div className="text-center max-w-xs md:max-w-md">
+    <section className="split-section h-[100dvh ] flex items-center justify-center bg-center bg-peachy  lg:bg-no-repeat lg:bg-cover lg:bg-[url('/images/ssec33.png')]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-5  md:m-20 md:p-20 rounded-lg">
+        <div className="corporate-grid flex flex-col justify-center items-center md:items-end text-center  md:text-right">
+          <div className="text-center lg:mt-20 max-w-xs md:max-w-md">
             <h2 className="text-4xl font-domine mb-4">C O R P O R A T E</h2>
             <p className="mb-8 text-lg px-6 text-gray-600 ">
               We specialize in experiential events that elevate brands into
@@ -81,8 +81,8 @@ const SplitSection = () => {
             />
           </svg>
         </div>
-        <div className="social-grid flex flex-col justify-center items-center md:items-start text-center md:text-left">
-          <div className="text-center max-w-xs md:max-w-md">
+        <div className="social-grid flex flex-col justify-center pt-5 items-center pb-5 px-10 lg:px-0  bg-peachy lg:bg-transparent md:items-start text-center md:text-left ">
+          <div className="text-center max-w-xs md:max-w-md lg:mt-20">
             <h2 className="text-4xl font-domine mb-4">S O C I A L</h2>
             <p className="mb-8 text-lg text-gray-600 ">
               We work with some of the best bartenders and creatives in the

@@ -24,7 +24,7 @@ const EventManagement = () => {
               <h1 className="text-2xl lg:text-5xl font-bold uppercase font-domine">
                 Event Management
               </h1>
-              <p className="text-sm lg:text-3xl lg:mx-10">
+              <p className="text-sm lg:text-2xl lg:mx-10">
                 <br /> <br />
                 Great experiences are what we are all about - bring your event
                 to life with an immersive guest experiences and truly unique

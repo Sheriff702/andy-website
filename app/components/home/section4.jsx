@@ -1,9 +1,12 @@
 "use client";
 import React, { useEffect } from "react";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import Design from "../../../public/images/design.jpg";
+import Passion from "../../../public/images/passion.jpg";
+import Listen from "../../../public/images/listen.jpg";
+import Deal from "../../../public/videos/deal.mp4";
 import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -29,43 +32,35 @@ const Section4 = () => {
   }, []);
 
   return (
-    <section className="overflow-hidden pt-8 pb-12 lg:pb-[90px] bg-white dark:bg-dark lg:bg-[url('/images/sec44.png')]">
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 px-10 lg:px-20">
-        <div className="lg:order-last section4-element bg-white lg:bg-transparent">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="col-span-1 ">
-              <div className="mb-4 hidden lg:block">
-                <Image
-                priority
-                  src={Design}
-                  alt="Image 1"
-                  className="w-full h-[200px] md:h-[300px] lg:h-[370px] object-cover rounded-2xl"
-                />
-              </div>
-              <div className="hidden lg:block">
-                <Image
-                priority
-                  src={Design}
-                  alt="Image 2"
-                  className="w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover rounded-2xl"
-                />
-              </div>
+    <section className="overflow-hidden pt-8  bg-white dark:bg-dark bg-cover   lg:bg-[url('/images/sec44.png')]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:px-5  ">
+        <div className="lg:order-last section4-element bg-white lg:bg-transparent px-5">
+          <div className="grid grid-cols-2 lg:flex flex-col-reverse   gap-4">
+            <div className="relative h-full lg:pb-96 w-full">
+              <video
+                className="absolute inset-0 w-full h-[300px] lg:h-[350px] object-cover rounded-2xl z-0"
+                src={Deal}
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
             </div>
-            <div className="col-span-1 flex  justify-center lg:grid items-center">
+            <div className="flex justify-center items-center">
               <Image
-              priority
-                src={Design}
+                priority
+                src={Listen}
                 alt="Image 3"
-                className=" lg:w-full h-[250px] mr-40  md:h-[300px] lg:h-[370px] object-cover  rounded-2xl"
+                className="w-full h-[300px] lg:h-[350px] object-cover rounded-2xl"
               />
             </div>
           </div>
         </div>
-        <div className="section4-element lg:py-24 text-center lg:text-left lg:bg-transparent ml-0 lg:ml-20">
+        <div className="section4-element lg:pl-40  pt-5    lg:py-24 text-center lg:text-left bg-gradient-to-r from-peachy to-white  lg:bg-none ml-0 lg:ml-20">
           <h2 className="font-domine text-3xl md:text-4xl lg:text-5xl">
             Your Vision, Our Creation
           </h2>
-          <p className="mt-4 text-gray-600 text-base md:text-lg lg:text-xl pr-0 lg:pr-24">
+          <p className="mt-4 text-gray-600 text-base md:text-lg lg:text-xl pr-0  lg:pr-24">
             Every great event starts with a bold idea. We turn those ideas into
             unforgettable experiences. Whether it’s crafting unique menus,
             designing events of any size, or collaborating across industries, we

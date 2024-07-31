@@ -1,8 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import Bartender from "../../../public/videos/bartender.mp4";
-import Image from "next/image";
-import Design from "../../../public/images/design.jpg";
+import Bartender2 from "../../../public/videos/bartender2.mp4";
 
 const BartenderServices = () => {
   const videoRef = useRef(null);
@@ -68,24 +67,28 @@ const BartenderServices = () => {
             </div>
           </div>
           <div className="relative h-full w-full">
-            <Image
-              src={Design}
-              alt="design"
-              layout="fill"
-              objectFit="cover"
-              priority
+            <video
+              ref={videoRef}
+              className="absolute  inset-0 w-full h-full object-cover z-0"
+              src={Bartender2}
+              autoPlay
+              loop
+              muted
+              playsInline
             />
           </div>
         </section>
 
         <section className="grid grid-cols-2 h-[400px] lg:h-[750px] bg-white     ">
           <div className="relative h-full w-full">
-            <Image
-              src={Design}
-              alt="design"
-              layout="fill"
-              objectFit="cover"
-              priority
+            <video
+              ref={videoRef}
+              className="absolute  inset-0 w-full h-full object-cover z-0"
+              src={Bartender}
+              autoPlay
+              loop
+              muted
+              playsInline
             />
           </div>
           <div className="flex items-center justify-center text-center p-4">

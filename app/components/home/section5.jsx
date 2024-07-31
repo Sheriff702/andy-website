@@ -9,7 +9,7 @@ import Link from "next/link";
 const Section5 = () => {
   return (
     <section className="min-h-screen items-center lg:px-0 px-5 justify-center bg-peachy pb-10">
-      <h1 className="text-4xl font-bold md:text-6xl  text-center uppercase p-10">
+      <h1 className="text-4xl font-bold md:text-6xl font-domine  text-center uppercase p-10">
         Our Services
       </h1>
       <div className=" flex items-center text-center justify-center">
@@ -29,7 +29,7 @@ const Section5 = () => {
             </Link>
             <div className="p-10">
               <Link href="/pages/event">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="mb-2 text-2xl font-semibold   tracking-tight text-gray-900 dark:text-white">
                   Event Management
                 </h5>
               </Link>
@@ -76,7 +76,7 @@ const Section5 = () => {
             </Link>
             <div className="p-10">
               <Link href="/pages/hospitality">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
                   Hospitality Design
                 </h5>
               </Link>
@@ -123,7 +123,7 @@ const Section5 = () => {
             </Link>
             <div className="p-10">
               <Link href="/pages/bartender">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
                   Mixology/Bartenders
                 </h5>
               </Link>

@@ -29,7 +29,7 @@ const BartenderServices = () => {
                 >
                   Read more
                   <svg
-                    className="rtl:rotate-180 lg:w-14 h-7 ms-2"
+                    className="rtl:rotate-180 lg:w-7 h-7 ms-2"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -68,7 +68,7 @@ const BartenderServices = () => {
                 >
                   Read more
                   <svg
-                    className="rtl:rotate-180 lg:w-14 h-7 ms-2"
+                    className="rtl:rotate-180 lg:w-7 h-7 ms-2"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -114,7 +114,7 @@ const BartenderServices = () => {
                 >
                   Read more
                   <svg
-                    className="rtl:rotate-180 lg:w-14 h-7 ms-2"
+                    className="rtl:rotate-180 lg:w-7 h-7 ms-2"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

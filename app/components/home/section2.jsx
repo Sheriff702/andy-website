@@ -40,9 +40,9 @@ const Section2 = () => {
   }, []);
 
   return (
-    <section className="relative h-[65vh] flex flex-col items-center justify-center text-center overflow-hidden bg-peachy lg:bg-[url('/images/pro.png')] bg-cover bg-top">
+    <section className="relative h-[65vh] flex  flex-col items-center justify-center text-center overflow-hidden bg-peachy lg:bg-[url('/images/pro.png')] bg-cover bg-top">
       <div className="absolute inset-0 z-0"></div>
-      <div className="relative z-10 font-poppins">
+      <div className="relative z-10 font-poppins -top-10">
         <p className="we-are text-gray-800 text-3xl">
           <span className="text-red-500 font-bold">We are</span> creatives,
           vision builders, planners, entertainers. <br />
