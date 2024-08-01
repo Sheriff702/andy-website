@@ -56,9 +56,9 @@ const BartenderServices = () => {
               <p className="text-[10px] lg:text-3xl lg:mx-10">
                 <br /> <br />
                 We believe that what you serve your guests matters, it is the
-                call back to a great event, so we go above and beyond to deliver
-                incredible drinks that stand out. Each menu we create is a
-                unique design for you and your guests only. Drinks that will
+                call back to a great event, so wee go above and beyond to
+                deliver incredible drinks that stand out. Each menu we create is
+                a unique design for you and your guests only. Drinks that will
                 never be repeated, ensuring you always get one of a kind moments
                 to remember. Our bartenders are energetic, guest centric and
                 always willing to push that extra mile for you to make sure your
