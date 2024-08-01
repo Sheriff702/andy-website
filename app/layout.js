@@ -1,5 +1,5 @@
 import { Inter, Poppins, Domine } from "next/font/google";
-import CanvasAnimation from "./components/CanvasAnimation";
+
 import "./globals.css";
 import Navbar from "./components/navbar";
 
@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Navbar />
       <body className="relative">
-        {/* <CanvasAnimation /> */}
         <div className="relative z-10">{children}</div>
       </body>
     </html>
