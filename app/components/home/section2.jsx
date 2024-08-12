@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -40,26 +41,39 @@ const Section2 = () => {
   }, []);
 
   return (
-    <section className="relative h-[65vh] flex  flex-col items-center justify-center text-center overflow-hidden bg-peachy lg:bg-[url('/images/pro.png')] bg-cover bg-top">
-      <div className="absolute inset-0 z-0"></div>
-      <div className="relative z-10 font-poppins -top-10">
-        <p className="we-are text-gray-800 text-3xl">
-          <span className="text-red-500 font-bold">We are</span> creatives,
-          vision builders, planners, entertainers. <br />
-        </p>
-        <p className="we text-gray-800 text-3xl leading-relaxed">
-          <span className="text-red-500 font-bold">We are</span> problem
-          solvers, dreamers, doers. <br />
-        </p>
-        <p className="we-are text-gray-800 text-3xl leading-relaxed">
-          All things are possible. <br />
-        </p>
-
-        <p className="we text-gray-800 text-3xl">
-          <span className=" text-red-500 font-bold">We are Carousel.</span>
-        </p>
-      </div>
-    </section>
+    <>
+      <Head>
+        <title>Creative Event Solutions | Carousel</title>
+        <meta
+          name="description"
+          content="We are creatives, vision builders, planners, entertainers, problem solvers, dreamers, and doers. Discover how Carousel brings all things to life."
+        />
+        <meta
+          name="keywords"
+          content="Creative Events, Vision Builders, Event Planners, Problem Solvers, Carousel"
+        />
+        <meta name="robots" content="index, follow" />
+      </Head>
+      <section className="relative h-[65vh] flex flex-col items-center justify-center text-center overflow-hidden bg-peachy lg:bg-[url('/images/pro.png')] bg-cover bg-top">
+        <div className="absolute inset-0 z-0"></div>
+        <div className="relative z-10 font-poppins -top-10">
+          <p className="we-are text-gray-800 text-3xl">
+            <span className="text-red-500 font-bold">We are</span> creatives,
+            vision builders, planners, entertainers. <br />
+          </p>
+          <p className="we text-gray-800 text-3xl leading-relaxed">
+            <span className="text-red-500 font-bold">We are</span> problem
+            solvers, dreamers, doers. <br />
+          </p>
+          <p className="we-are text-gray-800 text-3xl leading-relaxed">
+            All things are possible. <br />
+          </p>
+          <p className="we text-gray-800 text-3xl">
+            <span className="text-red-500 font-bold">We are Carousel.</span>
+          </p>
+        </div>
+      </section>
+    </>
   );
 };
 

@@ -55,7 +55,7 @@ const EventManagement = () => {
             </div>
           </div>
           <div className="relative h-full w-full">
-            <Image src={Event} alt="design" layout="fill" objectFit="cover" />
+            <Image src={Event} alt="design" fill="true" cover="true" />
           </div>
         </section>
 

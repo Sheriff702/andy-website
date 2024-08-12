@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 import React, { useEffect, useRef } from "react";
 import video from "../../../public/videos/vidmix.mp4";
 import { gsap } from "gsap";
@@ -39,21 +40,52 @@ const HeroPage = () => {
   }, []);
 
   return (
-    <div className="relative h-[90vh] grid grid-cols-1 md:grid-cols-2 overflow-hidden">
-      <div className="relative w-full h-full order-first md:order-last">
-        <video
-          className="hero-image absolute inset-0 w-full h-full object-cover z-0"
-          ref={videoRef}
-          src={video}
-          autoPlay
-          loop
-          muted
-          playsInline
+    <>
+      <Head>
+        <title>
+          Event Management, Hospitality Design, Bartender Services | Your
+          Company
+        </title>
+        <meta
+          name="description"
+          content="Discover our award-winning services in event management, hospitality design, and bartender services. Transform your events into unforgettable experiences."
         />
+        <meta
+          name="keywords"
+          content="Event Management, Hospitality Design, Bartender Services, Creative Events, Custom Hospitality Solutions"
+        />
+        <meta name="robots" content="index, follow" />
+      </Head>
 
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center md:hidden">
-          <div className="hero-text-container font-domine text-center text-white p-4">
-            <h1 className=" hero-text text-2xl md:text-5xl font-bold">
+      <main className="relative h-[90vh] grid grid-cols-1 md:grid-cols-2 overflow-hidden">
+        <section className="relative w-full h-full order-first md:order-last">
+          <video
+            className="hero-image absolute inset-0 w-full h-full object-cover z-0"
+            ref={videoRef}
+            src={video}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center md:hidden">
+            <div className="hero-text-container font-domine text-center text-white p-4">
+              <h1 className="hero-text text-2xl md:text-5xl font-bold">
+                EVENT MANAGEMENT,
+              </h1>
+              <h1 className="hero-text text-2xl md:text-5xl font-bold">
+                HOSPITALITY DESIGN <span className="text-green-400"> + </span>
+              </h1>
+              <h1 className="hero-text text-2xl md:text-5xl font-bold">
+                BARTENDER SERVICES
+              </h1>
+            </div>
+          </div>
+        </section>
+        <section className="hero-text-container hidden md:flex items-center justify-center bg-white bg-opacity-70 rounded-sm">
+          <div className="space-y-10 text-center font-domine md:text-left p-4">
+            <h1 className="hero-text text-2xl md:text-5xl font-bold text-gray-800">
               EVENT MANAGEMENT,
             </h1>
             <h1 className="hero-text text-2xl md:text-5xl font-bold">
@@ -63,22 +95,9 @@ const HeroPage = () => {
               BARTENDER SERVICES
             </h1>
           </div>
-        </div>
-      </div>
-      <div className="hero-text-container hidden md:flex items-center justify-center bg-white bg-opacity-70 rounded-sm">
-        <div className="space-y-10 text-center font-domine md:text-left p-4">
-          <h1 className="hero-text text-2xl md:text-5xl font-bold text-gray-800">
-            EVENT MANAGEMENT,
-          </h1>
-          <h1 className="hero-text text-2xl md:text-5xl font-bold">
-            HOSPITALITY DESIGN <span className="text-green-400"> + </span>
-          </h1>
-          <h1 className="hero-text text-2xl md:text-5xl font-bold">
-            BARTENDER SERVICES
-          </h1>
-        </div>
-      </div>
-    </div>
+        </section>
+      </main>
+    </>
   );
 };
 

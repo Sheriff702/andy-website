@@ -53,13 +53,13 @@ const Hospitality = () => {
             </div>
           </div>
           <div className="relative h-full w-full">
-            <Image src={Design3} alt="design" layout="fill" objectFit="cover" />
+            <Image src={Design3} alt="design" layout="fill" cover="true" />
           </div>
         </section>
 
         <section className="grid grid-cols-2 h-[400px] lg:h-[750px] bg-flux    ">
           <div className="relative h-full w-full">
-            <Image src={Design} alt="design" layout="fill" objectFit="cover" />
+            <Image src={Design} alt="design" layout="fill" cover="true" />
           </div>
           <div className="flex items-center justify-center text-center p-4">
             <div className="">
