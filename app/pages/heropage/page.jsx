@@ -16,7 +16,7 @@ const Hero = () => {
       <Section52 />
       <Section5 />
 
-      <Section6 />
+      {/* <Section6 /> */}
     </main>
   );
 };

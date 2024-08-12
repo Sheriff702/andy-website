@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex overflow-hidden items-center w-[190px] lg:w-[300px]">
-              <a
+              <Link
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -31,7 +31,7 @@ const Navbar = () => {
                   height={100}
                   style={{ width: "100%", height: "auto" }}
                 />
-              </a>
+              </Link>
             </div>
             <div className="flex md:hidden">
               <button
@@ -80,12 +80,12 @@ const Navbar = () => {
             <div className="hidden md:block">
               <ul className="flex items-center space-x-8">
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
@@ -106,12 +106,12 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="/pages/contact"
                     className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -122,12 +122,12 @@ const Navbar = () => {
           <div className="md:hidden" id="mobile-menu">
             <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <li>
-                <a
+                <Link
                   href="/"
                   className="block text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Home
-                </a>
+                </Link>
               </li>
 
               <li>
@@ -147,12 +147,12 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/pages/contact"
                   className="block text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

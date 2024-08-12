@@ -1,15 +1,23 @@
 import React from "react";
 import Image from "next/image";
 import Design from "../../../public/images/design.jpg";
+import Event from "../../../public/images/event.jpg";
+import Bartender from "../../../public/images/bartender.jpg";
 import Link from "next/link";
 
 const BartenderServices = () => {
   return (
     <section className="">
       <div className="">
-        <section className="grid grid-cols-2 h-[400px] lg:h-[750px] bg-white">
+        <section className="grid grid-cols-2 h-[400px] lg:h-[750px] bg-amber-500">
           <div className="relative h-full w-full">
-            <Image src={Design} alt="design" layout="fill" objectFit="cover" />
+            <Image
+              src={Event}
+              alt="Event Management"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover"
+            />
           </div>
           <div className="flex items-center justify-center text-center p-4">
             <div>
@@ -37,9 +45,9 @@ const BartenderServices = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
@@ -76,9 +84,9 @@ const BartenderServices = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
@@ -87,13 +95,25 @@ const BartenderServices = () => {
             </div>
           </div>
           <div className="relative h-full w-full">
-            <Image src={Design} alt="design" layout="fill" objectFit="cover" />
+            <Image
+              src={Design}
+              alt="Hospitality Design"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover"
+            />
           </div>
         </section>
 
         <section className="grid  grid-cols-2 h-[400px] lg:h-[750px] bg-red-200">
           <div className="relative h-full w-full">
-            <Image src={Design} alt="design" layout="fill" objectFit="cover" />
+            <Image
+              src={Bartender}
+              alt="Bartender Services"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover"
+            />
           </div>
           <div className="flex items-center justify-center text-center p-4">
             <div>
@@ -122,9 +142,9 @@ const BartenderServices = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>

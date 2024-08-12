@@ -65,9 +65,9 @@ const SplitSection = () => {
               Bringing a boutique approach to innovative global brands and
               startups alike, we create experiences that work.
             </p>
-            <button className="btn-hover-effect bg-black text-white px-6 py-3 rounded-full font-semibold relative overflow-hidden">
+            {/* <button className="btn-hover-effect bg-black text-white px-6 py-3 rounded-full font-semibold relative overflow-hidden">
               <span className="relative z-10">LEARN MORE</span>
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="line flex justify-center items-center">
@@ -91,9 +91,9 @@ const SplitSection = () => {
               we combine seasoned knowledge with inspiration. Don&apos;t settle
               for boring standard eventing.
             </p>
-            <button className="btn-hover-effect bg-black text-white px-6 py-3 rounded-full font-semibold relative overflow-hidden">
+            {/* <button className="btn-hover-effect bg-black text-white px-6 py-3 rounded-full font-semibold relative overflow-hidden">
               <span className="relative z-10">LEARN MORE</span>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

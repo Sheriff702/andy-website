@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 
-import Design from "../../../public/images/design.jpg";
+import Design from "../../../public/images/design2sec.jpg";
+import Design3 from "../../../public/images/design3sec.jpg";
 import EventVideo from "../../../public/videos/designvideo2.mp4";
 
 const Hospitality = () => {
@@ -52,11 +53,11 @@ const Hospitality = () => {
             </div>
           </div>
           <div className="relative h-full w-full">
-            <Image src={Design} alt="design" layout="fill" objectFit="cover" />
+            <Image src={Design3} alt="design" layout="fill" objectFit="cover" />
           </div>
         </section>
 
-        <section className="grid grid-cols-2 h-[400px] lg:h-[750px] bg-red-400    ">
+        <section className="grid grid-cols-2 h-[400px] lg:h-[750px] bg-flux    ">
           <div className="relative h-full w-full">
             <Image src={Design} alt="design" layout="fill" objectFit="cover" />
           </div>

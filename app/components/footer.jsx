@@ -38,6 +38,8 @@ const Footer = () => {
             href="https://www.instagram.com/carousel_cocktail/"
             alt="Instagram"
             className="text-red-500  hover:text-gray-900"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <svg
               className="h-5 w-5"

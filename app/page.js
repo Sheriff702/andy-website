@@ -4,7 +4,7 @@ import Hero from "./pages/heropage/page";
 
 export default function Home() {
   return (
-    <main className="z-50">
+    <main>
       <Hero />
       <Footer />
     </main>

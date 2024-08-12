@@ -51,7 +51,8 @@ const Section4 = () => {
                 priority
                 src={Listen}
                 alt="Image 3"
-                className="w-full h-[300px] lg:h-[350px] object-cover rounded-2xl"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="h-[300px] object-cover rounded-2xl"
               />
             </div>
           </div>
