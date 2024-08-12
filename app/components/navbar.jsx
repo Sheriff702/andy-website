@@ -11,6 +11,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <body>
       <nav className="bg-white shadow-md ">
@@ -125,6 +129,7 @@ const Navbar = () => {
                 <Link
                   href="/"
                   className="block text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
+                  onClick={closeMenu}
                 >
                   Home
                 </Link>
@@ -134,6 +139,7 @@ const Navbar = () => {
                 <Link
                   href="/pages/services"
                   className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
+                  onClick={closeMenu}
                 >
                   Services
                 </Link>
@@ -142,6 +148,7 @@ const Navbar = () => {
                 <Link
                   href="/pages/aboutus"
                   className="block text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
+                  onClick={closeMenu}
                 >
                   About Us
                 </Link>
@@ -150,6 +157,7 @@ const Navbar = () => {
                 <Link
                   href="/pages/contact"
                   className="block text-gray-900 hover:text-blue-700 px-3 py-2 rounded-md text-base font-medium"
+                  onClick={closeMenu}
                 >
                   Contact
                 </Link>
